@@ -1,0 +1,51 @@
+:root {
+    --deep-ocean: #005F73;
+    --sage: #94D2BD;
+    --amber: #EE9B00;
+    --river-sand: #F1FAEE;
+    --text-dark: #1D3557;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--text-dark);
+    background-color: var(--river-sand);
+    margin: 0;
+}
+
+header {
+    background: white;
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.hero {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(rgba(0,95,115,0.7), rgba(0,95,115,0.7)), url('assets/images/river-bg.jpg');
+    background-size: cover;
+    color: white;
+    padding: 2rem;
+}
+
+h1 { font-family: 'Lora', serif; font-size: 3rem; }
+
+.cta-btn {
+    background-color: var(--amber);
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cta-btn:hover { background-color: #ca8600; transform: scale(1.05); }
