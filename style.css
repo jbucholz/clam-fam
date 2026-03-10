@@ -49,3 +49,59 @@ h1 { font-family: 'Lora', serif; font-size: 3rem; }
 }
 
 .cta-btn:hover { background-color: #ca8600; transform: scale(1.05); }
+
+/* Layout Containers */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+}
+
+/* Hero Section */
+.about-hero {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.lead {
+    font-size: 1.4rem;
+    font-family: 'Lora', serif;
+    font-style: italic;
+    color: var(--deep-ocean);
+}
+
+/* Content Grid (Text on one side, Image on other) */
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .content-grid { grid-template-columns: 1fr; }
+}
+
+.aesthetic-round {
+    border-radius: 50% 50% 30% 70% / 50% 30% 70% 50%; /* Organic 'river stone' shape */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* Pillars Section */
+.pillars {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-top: 4rem;
+    border-top: 1px solid var(--sage);
+    padding-top: 3rem;
+}
+
+.pillar h3 {
+    color: var(--amber);
+}
+
+/* Active Link Highlight */
+nav a.active {
+    border-bottom: 2px solid var(--amber);
+}
