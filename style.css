@@ -399,3 +399,63 @@ hr {
 
 .status-tag.secure { background: #d8f3dc; color: #1b4332; }
 .status-tag.threatened { background: #f8d7da; color: #721c24; }
+
+
+/* Education Feature Block */
+.education-feature {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+    border: 2px dashed var(--sage); /* Dashed border gives a 'crafty' feel */
+    margin: 40px 0;
+}
+
+.feature-text h3 {
+    font-family: 'Lora', serif;
+    color: var(--deep-ocean);
+    margin-top: 0;
+}
+
+/* The 'Makeover' Button */
+.btn-secondary {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 2px solid var(--amber);
+    color: var(--amber);
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: var(--amber);
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Image Styling */
+.makeover-thumb {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 15px;
+    transform: rotate(2deg); /* A slight tilt for that 'scrapbook' aesthetic */
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.makeover-thumb:hover {
+    transform: rotate(0deg) scale(1.02);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .education-feature {
+        flex-direction: column;
+        text-align: center;
+    }
+}
