@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | ACCC</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Lora:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">ACFMCC</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Team.html">Team</a></li>
+                <li><a href="Contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="contact-header">
+            <h1>Get in Touch</h1>
+            <p>Have questions about freshwater mussel research or consortium membership? We'd love to hear from you.</p>
+        </section>
+
+        <div class="contact-grid">
+            <div class="form-container">
+                <form action="https://formspree.io/f/YOUR_UNIQUE_ID" method="POST">
+                    <div class="input-group">
+                        <label for="full-name">Jamie Bucholz, Ph.D. </label>
+                        <input type="text" id="full-name" name="name" placeholder="Dr. Jamie Bucholz" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="_replyto" placeholder="jamie.kim@uri.edu" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6" placeholder="How can we collaborate?" required></textarea>
+                    </div>
+
+                    <button type="submit" class="cta-btn">Send Message</button>
+                </form>
+            </div>
+
+            <div class="contact-info">
+                <h3>Consortium Liaison</h3>
+                <p>For urgent inquiries regarding sampling permits or data sharing:</p>
+                <p><strong>Email:</strong> clamdown@proton.me </p>
+                
+                <hr>
+                
+                <h3>Mailing Address</h3>
+                <p>Coastal Institute<br>
+                1 Greenhouse Rd <br>
+                Kingston, RI 02881</p>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
