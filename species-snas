@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eastern Pondmussel | ACCC</title>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Lora:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">ACCC</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Species.html">Species</a></li>
+                <li><a href="Team.html">Team</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="species-hero pondmussel-bg">
+            <div class="hero-content">
+                <span class="taxonomy">Family: Unionidae</span>
+                <h1><i>Sagittunio nasutus</i></h1>
+                <p class="common-name">Eastern Pondmussel</p>
+            </div>
+        </section>
+
+        <div class="species-grid">
+            <aside class="species-stats">
+                <div class="stat-card">
+                    <h4>Conservation Status</h4>
+                    <p class="status threatened">Special Concern / Threatened</p>
+                </div>
+                <div class="stat-card">
+                    <h4>Key Characteristics</h4>
+                    <ul>
+                        <li>Elongated, sword-like shell</li>
+                        <li>Distinctly pointed posterior</li>
+                        <li>Delicate, thin valves</li>
+                    </ul>
+                </div>
+            </aside>
+
+            <article class="species-info">
+                <h2>Overview</h2>
+                <p>Unlike the robust <i>Elliptio</i>, the Eastern Pondmussel is built for the quiet waters of coastal ponds and slow-moving backwaters. Its namesake "nasute" (nose-like) posterior end is a key diagnostic feature for researchers in the field.</p>
+
+                <figure class="featured-image">
+                    <img src="./assets/nasutus_reduced.jpg" alt="Snas in hand" class="aesthetic-round">
+                    <figcaption>Image courtesy of Roger Thomas, Drexel Academy of Natural Sciences</figcaption>
+                </figure>
+
+                <h3>Habitat & Distribution</h3>
+                <p>Typically found in silty or sandy substrates, <i>S. nasutus</i> is highly sensitive to habitat fragmentation. Our consortium tracks its distribution across the Atlantic Slope to better understand its patchy occurrence in the Northeast.</p>
+            </article>
+        </div>
+    </main>
+
+</body>
+</html>
