@@ -279,3 +279,60 @@ hr {
     margin-top: 20px;
     width: 100%;
 }
+
+/* Species Hero */
+.species-hero {
+    background: linear-gradient(rgba(0,95,115,0.8), rgba(0,95,115,0.8)), url('../assets/TEST.jpg');
+    background-size: cover;
+    color: white;
+    padding: 60px 40px;
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+
+.taxonomy {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+    opacity: 0.8;
+}
+
+.common-name {
+    font-family: 'Lora', serif;
+    font-style: italic;
+    font-size: 1.5rem;
+}
+
+/* Two-column layout for info */
+.species-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+}
+
+/* Sidebar Stats */
+.stat-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+    border-left: 5px solid var(--sage);
+}
+
+.stat-card h4 {
+    margin-top: 0;
+    font-size: 0.9rem;
+    color: var(--deep-ocean);
+}
+
+.status.secure {
+    color: #2D6A4F;
+    font-weight: bold;
+}
+
+/* Gallery inside info */
+.image-gallery img {
+    margin-top: 20px;
+    width: 100%;
+}
