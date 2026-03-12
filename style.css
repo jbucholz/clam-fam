@@ -282,7 +282,7 @@ hr {
 
 /* Species Hero */
 .species-hero {
-    background: linear-gradient(rgba(0,95,115,0.8), rgba(0,95,115,0.8)), url('../assets/TEST.jpg');
+    background: linear-gradient(rgba(0,95,115,0.8), rgba(0,95,115,0.8)), url('../assets/river_reduced.jpg');
     background-size: cover;
     color: white;
     padding: 60px 40px;
