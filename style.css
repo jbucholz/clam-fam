@@ -459,3 +459,48 @@ hr {
         text-align: center;
     }
 }
+
+/* The Container for the River Image */
+.river-break {
+    width: 100%;
+    overflow: hidden;
+    background-color: var(--river-sand); /* Uses our existing beige neutral */
+    padding-bottom: 2rem;
+}
+
+.river-container {
+    position: relative;
+    max-width: 1200px; /* Aligns with your page's max width */
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* The Image Style */
+.river-full {
+    width: 100%;
+    height: 400px; /* Adjust this to change how 'tall' the section is */
+    object-fit: cover; /* This is the secret to a professional look */
+    border-radius: 0 0 100px 0; /* An organic 'river bend' curve on the bottom right */
+    box-shadow: 0 10px 30px rgba(0, 95, 115, 0.1);
+}
+
+/* Subtle Credit Overlay */
+.photo-credit {
+    position: absolute;
+    bottom: 15px;
+    right: 35px;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 4px 10px;
+    border-radius: 5px;
+    font-size: 0.7rem;
+    color: var(--deep-ocean);
+    backdrop-filter: blur(5px); /* Modern 'glass' effect */
+}
+
+/* Mobile Tweak */
+@media (max-width: 768px) {
+    .river-full {
+        height: 250px;
+        border-radius: 0 0 50px 0;
+    }
+}
