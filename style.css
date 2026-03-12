@@ -504,3 +504,68 @@ hr {
         border-radius: 0 0 50px 0;
     }
 }
+
+/* Stantec-Inspired Header */
+.nice-header {
+    background-color: #1a1a1a; /* Dark charcoal/black */
+    padding: 0;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px; /* Taller header for a premium feel */
+    padding: 0 20px;
+}
+
+.logo {
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    height: 100%; /* Important for the hover bar height */
+}
+
+.nav-links li {
+    height: 100%;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase; /* The Stantec 'look' */
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    transition: all 0.2s ease-in-out;
+    border-bottom: 4px solid transparent; /* The hidden bar */
+}
+
+/* The Hover Effect */
+.nav-links a:hover {
+    background-color: #2a2a2a; /* Subtle lighten */
+    border-bottom: 4px solid var(--amber); /* Stantec uses a vibrant blue/green, we'll use your Amber */
+    color: #ffffff;
+}
+
+/* Active State */
+.nav-links a.active {
+    border-bottom: 4px solid var(--sage);
+}
