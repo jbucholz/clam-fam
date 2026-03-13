@@ -516,7 +516,8 @@ hr {
 
 /* Stantec-Inspired Header */
 .nice-header {
-    background-color: #1a1a1a; /* Dark charcoal/black */
+    margin: 0;
+    background-color: var(--deep-ocean); /* This is your dark blue (#005F73) */
     padding: 0;
     width: 100%;
     position: sticky;
