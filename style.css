@@ -52,9 +52,11 @@ h1 { font-family: 'Lora', serif; font-size: 3rem; }
 
 /* Layout Containers */
 .container {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 4rem 2rem;
+    width: 100%;           /* Fills the screen */
+    max-width: 1400px;     /* But stops at a reasonable point so lines aren't too long to read */
+    margin: 0 auto;        /* Centers the content */
+    padding: 0 40px;       /* Adds 'breathing room' on the sides */
+    box-sizing: border-box; /* Prevents padding from breaking the width */
 }
 
 /* Hero Section */
