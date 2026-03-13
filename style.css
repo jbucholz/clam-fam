@@ -10,7 +10,10 @@ body {
     font-family: 'Inter', sans-serif;
     color: var(--text-dark);
     background-color: var(--river-sand);
-    margin: 0;
+    margin: 0;         /* This kills the outer gap */
+    padding: 0;        /* This kills any inner gap */
+    width: 100%;
+    overflow-x: hidden; /* This prevents accidental horizontal scrolling */
 }
 
 header {
@@ -23,7 +26,9 @@ header {
 }
 
 .hero {
-    height: 60vh;
+    width: 100%;             /* Force it to be the full width of the screen */
+    min-height: 60vh;        /* Use min-height so it can grow if needed */
+    margin: 0;               /* Ensure no margins are pushing it in */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -31,8 +36,8 @@ header {
     text-align: center;
     background: linear-gradient(rgba(0,95,115,0.7), rgba(0,95,115,0.7)), url('assets/images/river-bg.jpg');
     background-size: cover;
+    background-position: center; /* Keeps the river centered even on wide screens */
     color: white;
-    padding: 2rem;
 }
 
 h1 { font-family: 'Lora', serif; font-size: 3rem; }
