@@ -1,46 +1,59 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Living Infrastructure Project</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lora:ital@0;1&display=swap" rel="stylesheet">
-</head>
 <body>
+    <header class="nice-header">
+        <nav class="nav-container">
+            <a href="index.html" class="logo-link" aria-label="Urban Flow Home">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 100" class="urban-flow-logo">
+                    <defs>
+                        <linearGradient id="riverGradient" x1="0%" y1="50%" x2="100%" y2="50%">
+                            <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" /> 
+                            <stop offset="100%" style="stop-color:#94D2BD;stop-opacity:1" /> 
+                        </linearGradient>
+                    </defs>
+                    <path d="M10,80 C60,40 140,120 290,60" stroke="url(#riverGradient)" stroke-width="8" fill="none" stroke-linecap="round" />
+                    <g transform="translate(40, 15) scale(0.6)">
+                        <path d="M50,10 C10,30 10,70 50,90 C60,95 70,95 80,90 C120,70 120,30 80,10 C70,5 60,5 50,10 Z" fill="#ffffff" />
+                        <path d="M55,15 C20,35 20,65 55,85 C65,90 75,90 85,85 C115,65 115,35 85,15 C75,10 65,10 55,15 Z" fill="#94D2BD" />
+                    </g>
+                    <text x="130" y="65" font-family="Inter, sans-serif" font-weight="800" font-size="32" fill="white">URBAN FLOW</text>
+                </svg>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html" class="active">About</a></li>
+                <li><a href="Species-index.html">Species</a></li>
+                <li><a href="Team.html">Team</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<header class="nice-header">
-    <nav class="nav-container">
-        <a href="index.html" class="logo-link" aria-label="Urban Flow Home">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 100" class="urban-flow-logo">
-        <defs>
-            <linearGradient id="riverGradient" x1="0%" y1="50%" x2="100%" y2="50%">
-                <stop offset="0%" style="stop-color:#005F73;stop-opacity:1" /> <stop offset="100%" style="stop-color:#94D2BD;stop-opacity:1" /> </linearGradient>
-        </defs>
+    <main> 
 
-        <path d="M10,80 C60,40 140,120 290,60" 
-              stroke="url(#riverGradient)" 
-              stroke-width="8" 
-              fill="none" 
-              stroke-linecap="round" />
+### 2. Required CSS Fixes for `style.css`
+Your current CSS has a few conflicting header rules. Use these to clean it up:
 
-        <g transform="translate(40, 15) scale(0.6)">
-            <path d="M50,10 C10,30 10,70 50,90 C60,95 70,95 80,90 C120,70 120,30 80,10 C70,5 60,5 50,10 Z" 
-                  fill="#005F73" /> <path d="M55,15 C20,35 20,65 55,85 C65,90 75,90 85,85 C115,65 115,35 85,15 C75,10 65,10 55,15 Z" 
-                  fill="#94D2BD" /> <path d="M60,25 C40,40 40,60 60,75" stroke="white" stroke-width="2" fill="none" opacity="0.5"/>
-            <path d="M70,35 C55,45 55,55 70,65" stroke="white" stroke-width="2" fill="none" opacity="0.3"/>
-        </g>
-    </svg>
-</a>
-        <ul class="nav-links">
-            <li><a href="index.html" class = "active">Home</a></li>
-            <li><a href="About.html">About</a></li>
-            <li><a href="Species-index.html">Species</a></li>
-            <li><a href="Team.html">Team</a></li>
-            <li><a href="Contact.html">Contact</a></li>
-        </ul>
-    </nav>
-</header>
+* **Remove the old white header:** Delete the `header { background: white; ... }` block entirely (around line 17).
+* **Fix the Logo Scaling:** Add this to ensure the SVG fits the blue bar:
+    ```css
+    .logo-link {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        text-decoration: none;
+    }
+
+    .urban-flow-logo {
+        height: 50px; /* Adjust this to make the logo larger or smaller */
+        width: auto;
+        display: block;
+    }
+    ```
+* **Full-Width Banner Fix:** Ensure your `.about-hero` (line 72) and `.nice-header` (line 281) are not trapped inside a container in your HTML. The structure above (moving the container *inside* the sections) is what will allow them to fill the screen width on the web.
+
+### Why this works:
+* **Color Visibility:** I changed the "Deep Ocean" parts of the SVG to **white** so they are visible against the dark blue header.
+* **Structural Alignment:** By placing the `logo-link` inside the `nav-container`, it will now automatically align to the left while your links stay on the right.
+* **Width:** Removing `class="container"` from your `<main>` tag is the key to letting your banners "bleed" to the edges of the screen.
 
     <section class="hero">
         <h1>The Living Infrastructure Project</h1>
@@ -53,5 +66,5 @@
         <div class="photo-credit"></div>
     </div>
 </section>
-</body>
+</main>
 </html>
