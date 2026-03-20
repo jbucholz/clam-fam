@@ -525,15 +525,6 @@ hr {
     z-index: 1000;
 }
 
-.nav-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 80px; /* Taller header for a premium feel */
-    padding: 0 20px;
-}
 
 .logo {
     color: #ffffff;
@@ -578,4 +569,30 @@ hr {
 /* Active State */
 .nav-links a.active {
     border-bottom: 4px solid var(--sage);
+}
+
+/* Styling for the new SVG logo */
+.logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    height: 100%; /* Spans the full height of the header */
+    padding: 10px 0;
+}
+
+.urban-flow-logo {
+    height: 100%; /* Scale the SVG height to fit the header */
+    width: auto;   /* Maintain the aspect ratio */
+    display: block;
+}
+
+/* Ensure the header container still works with the new logo */
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px; /* Kept your header height */
+    padding: 0 20px;
 }
