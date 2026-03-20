@@ -18,8 +18,8 @@
                 </svg>
             </a>
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="About.html" class="active">About</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="About.html">About</a></li>
                 <li><a href="Species-index.html">Species</a></li>
                 <li><a href="Team.html">Team</a></li>
                 <li><a href="Contact.html">Contact</a></li>
@@ -28,33 +28,6 @@
     </header>
 
     <main> 
-
-### 2. Required CSS Fixes for `style.css`
-Your current CSS has a few conflicting header rules. Use these to clean it up:
-
-* **Remove the old white header:** Delete the `header { background: white; ... }` block entirely (around line 17).
-* **Fix the Logo Scaling:** Add this to ensure the SVG fits the blue bar:
-    ```css
-    .logo-link {
-        display: flex;
-        align-items: center;
-        height: 100%;
-        text-decoration: none;
-    }
-
-    .urban-flow-logo {
-        height: 50px; /* Adjust this to make the logo larger or smaller */
-        width: auto;
-        display: block;
-    }
-    ```
-* **Full-Width Banner Fix:** Ensure your `.about-hero` (line 72) and `.nice-header` (line 281) are not trapped inside a container in your HTML. The structure above (moving the container *inside* the sections) is what will allow them to fill the screen width on the web.
-
-### Why this works:
-* **Color Visibility:** I changed the "Deep Ocean" parts of the SVG to **white** so they are visible against the dark blue header.
-* **Structural Alignment:** By placing the `logo-link` inside the `nav-container`, it will now automatically align to the left while your links stay on the right.
-* **Width:** Removing `class="container"` from your `<main>` tag is the key to letting your banners "bleed" to the edges of the screen.
-
     <section class="hero">
         <h1>The Living Infrastructure Project</h1>
         <p>A collaborative effort dedicated to building better cities, preserving aquatic biodiversity, and changing the Atlantic Coast for the better.</p>
@@ -67,4 +40,5 @@ Your current CSS has a few conflicting header rules. Use these to clean it up:
     </div>
 </section>
 </main>
+</body>
 </html>
