@@ -642,8 +642,8 @@ hr {
 
 /* A more compact, controlled square style */
 .square-smooth {
-    width: 200px;           /* Reduced from 250px */
-    height: 200px;          /* Keep it a perfect square */
+    width: 225px;           /* Reduced from 250px */
+    height: 225px;          /* Keep it a perfect square */
     object-fit: cover;      /* Prevents 'squishing' the mussel */
     border-radius: 12px;    /* Slightly tighter corners for a smaller box */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
