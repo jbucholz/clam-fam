@@ -640,18 +640,16 @@ hr {
     transition: 0.3s;
 }
 
-/* Square box with rounded corners */
+/* A more compact, controlled square style */
 .square-smooth {
-    width: 250px;           /* Sets a fixed, smaller width */
-    height: 250px;          /* Matches width for a perfect square */
-    object-fit: cover;      /* CRITICAL: Prevents the image from stretching */
-    border-radius: 20px;    /* The 'rounded box' look */
-    box-shadow: 0 4px 12px rgba(0, 95, 115, 0.1); /* Subtle blue-tinted shadow */
-    transition: transform 0.3s ease;
-    display: block;
-    margin: 1rem 0;         /* Adds a little breathing room */
+    width: 200px;           /* Reduced from 250px */
+    height: 200px;          /* Keep it a perfect square */
+    object-fit: cover;      /* Prevents 'squishing' the mussel */
+    border-radius: 12px;    /* Slightly tighter corners for a smaller box */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;  /* Allows text to sit next to it if needed */
+    margin: 10px;
 }
-
 .square-smooth:hover {
     transform: scale(1.02); /* Slight pop when hovered */
 }
