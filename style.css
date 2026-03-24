@@ -639,3 +639,19 @@ hr {
     transform: rotate(180deg);
     transition: 0.3s;
 }
+
+/* Square box with rounded corners */
+.square-smooth {
+    width: 250px;           /* Sets a fixed, smaller width */
+    height: 250px;          /* Matches width for a perfect square */
+    object-fit: cover;      /* CRITICAL: Prevents the image from stretching */
+    border-radius: 20px;    /* The 'rounded box' look */
+    box-shadow: 0 4px 12px rgba(0, 95, 115, 0.1); /* Subtle blue-tinted shadow */
+    transition: transform 0.3s ease;
+    display: block;
+    margin: 1rem 0;         /* Adds a little breathing room */
+}
+
+.square-smooth:hover {
+    transform: scale(1.02); /* Slight pop when hovered */
+}
