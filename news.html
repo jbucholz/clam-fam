@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News & Updates | The Living Infrastructure Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="nice-header">
+        <nav class="nav-container">
+            <a href="news.html" class="logo-link" aria-label="Urban Flow Home">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 100" class="urban-flow-logo">
+                    <defs>
+                        <linearGradient id="riverGradient" x1="0%" y1="50%" x2="100%" y2="50%">
+                            <stop offset="0%" style="stop-color:#005F73;stop-opacity:1" /> 
+                            <stop offset="100%" style="stop-color:#94D2BD;stop-opacity:1" /> 
+                        </linearGradient>
+                    </defs>
+
+                    <path d="M10,80 C60,40 140,120 290,60" 
+                          stroke="url(#riverGradient)" 
+                          stroke-width="8" 
+                          fill="none" 
+                          stroke-linecap="round" />
+
+                    <g transform="translate(40, 15) scale(0.6)">
+                        <path d="M50,10 C10,30 10,70 50,90 C60,95 70,95 80,90 C120,70 120,30 80,10 C70,5 60,5 50,10 Z" fill="#005F73" /> 
+                        <path d="M55,15 C20,35 20,65 55,85 C65,90 75,90 85,85 C115,65 115,35 85,15 C75,10 65,10 55,15 Z" fill="#94D2BD" /> 
+                        <path d="M60,25 C40,40 40,60 60,75" stroke="white" stroke-width="2" fill="none" opacity="0.5"/>
+                        <path d="M70,35 C55,45 55,55 70,65" stroke="white" stroke-width="2" fill="none" opacity="0.3"/>
+                    </g>
+                </svg>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="news.html" class="active">News</a></li>
+                <li class="dropdown">
+                    <a href="Species-index.html" class="dropbtn">Species <span class="arrow">▼</span></a>
+                    <div class="dropdown-content">
+                        <a href="./species/species-snas.html">Eastern Pondmussel</a>
+                    </div>
+                </li>
+                <li><a href="Team.html">Team</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main> 
+        <!-- Header Banner -->
+        <section class="news-hero">
+            <div class="container"> 
+                <h1>Latest News & Updates</h1>
+                <p class="lead">Field dispatches and community updates.</p>
+            </div>
+        </section>
+
+        <div class="news-container container">
+            <!-- Main Content Area -->
+            <div class="news-main">
+                
+                <!-- Featured Article -->
+                <article class="featured-card">
+                    <div class="card-image">
+                        <img src="https://via.placeholder.com/800x400" alt="Eastern Pondmussel reintroduction effort">
+                    </div>
+                    <div class="card-content">
+                        <div class="meta-info">
+                            <span class="category">Field Update</span>
+                            <span class="date">August 7, 2026</span>
+                        </div>
+                        <h2><a href="#">The status of Rhode Island mussel populations.</a></h2>
+                        <p>Our team, with the help of the Narragansett Bay Program, has been re-surveying Rhode Island rivers for freshwater mussel species.</p>
+                        <a href="#" class="read-more">Read Full Story &rarr;</a>
+                    </div>
+                </article>
+
+                <!-- News Grid -->
+                <div class="articles-grid">
+                    
+                    <!-- Article 1 -->
+                    <article class="news-card">
+                        <div class="card-image">
+                            <img src="https://via.placeholder.com/400x250" alt="River baseline measuring">
+                        </div>
+                        <div class="card-content">
+                            <div class="meta-info">
+                                <span class="category">Research</span>
+                                <span class="date">July 20, 2026</span>
+                            </div>
+                            <h3><a href="#">Summer Stream Survey </a></h3>
+                            <p>Rhode Island mussel declines</p>
+                            <a href="#" class="read-more">Read Article &rarr;</a>
+                        </div>
+                    </article>
+
+                    <!-- Article 2 -->
+                    <article class="news-card">
+                        <div class="card-image">
+                            <img src="https://via.placeholder.com/400x250" alt="Community volunteers">
+                        </div>
+                        <div class="card-content">
+                            <div class="meta-info">
+                                <span class="category">Community</span>
+                                <span class="date">July 11, 2026</span>
+                            </div>
+                            <h3><a href="#">Volunteer Water Monitoring Program Expands</a></h3>
+                            <p>Over 50 citizen scientists joined our workshop last weekend to learn habitat sampling techniques.</p>
+                            <a href="#" class="read-more">Read Article &rarr;</a>
+                        </div>
+                    </article>
+
+
+                <!-- Pagination -->
+                <nav class="pagination" aria-label="Page Navigation">
+                    <a href="#" class="page-link active">1</a>
+                    <a href="#" class="page-link">2</a>
+                    <a href="#" class="page-link">3</a>
+                    <a href="#" class="page-link next">Next &rarr;</a>
+                </nav>
+
+            </div>
+
+            <!-- News Sidebar -->
+            <aside class="news-sidebar">
+                <div class="widget search-widget">
+                    <h3>Search</h3>
+                    <form class="search-form">
+                        <input type="search" placeholder="Search news articles...">
+                        <button type="submit">Search</button>
+                    </form>
+                </div>
+
+                <div class="widget category-widget">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="#">Field Updates <span>(12)</span></a></li>
+                        <li><a href="#">Research & Studies <span>(8)</span></a></li>
+                        <li><a href="#">Community & Events <span>(15)</span></a></li>
+                        <li><a href="#">Policy & Advocacy <span>(5)</span></a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 The Living Infrastructure Project</p>
+    </footer>
+
+</body>
+</html>
