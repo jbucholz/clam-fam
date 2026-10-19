@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stone Walls</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="nice-header">
+        <nav class="nav-container">
+            <a href="index.html" class="logo-link" aria-label="Home">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 100" class="urban-flow-logo">
+                    <defs>
+                        <linearGradient id="riverGradient" x1="0%" y1="50%" x2="100%" y2="50%">
+                            <stop offset="0%" style="stop-color:#005F73;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#94D2BD;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+
+                    <path d="M10,80 C60,40 140,120 290,60" 
+                          stroke="url(#riverGradient)" 
+                          stroke-width="8" 
+                          fill="none" 
+                          stroke-linecap="round" />
+
+                    <g transform="translate(40, 15) scale(0.6)">
+                        <path d="M50,10 C10,30 10,70 50,90 C60,95 70,95 80,90 C120,70 120,30 80,10 C70,5 60,5 50,10 Z" 
+                              fill="#005F73" />
+                        <path d="M55,15 C20,35 20,65 55,85 C65,90 75,90 85,85 C115,65 115,35 85,15 C75,10 65,10 55,15 Z" 
+                              fill="#94D2BD" />
+                        <path d="M60,25 C40,40 40,60 60,75" stroke="white" stroke-width="2" fill="none" opacity="0.5"/>
+                        <path d="M70,35 C55,45 55,55 70,65" stroke="white" stroke-width="2" fill="none" opacity="0.3"/>
+                    </g>
+                </svg>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="news.html">News</a></li>
+                <li class="dropdown">
+                    <a href="Species-index.html" class="dropbtn">Species <span class="arrow">▼</span></a>
+                    <div class="dropdown-content">
+                        <a href="./species/species-snas.html">Eastern Pondmussel</a>
+                    </div>
+                </li>
+                <li><a href="stone-walls.html" class="active">Stone Walls</a></li>
+                <li><a href="Team.html">Team</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="content-grid">
+                <div class="text-block">
+                    <h2>Living Structural Interfaces</h2>
+                    <p>Dry-laid and historic stone walls along waterways serve as more than physical retainers—they act as refuges for species.</p>
+                    <p>The interstitial spaces and micro-crevices formed by stacked stone provide essential thermal refuge and attachment substrates for macroinvertebrates, mosses, and biofilm communities.</p>
+                </div>
+                <div class="image-block">
+                    <img src="assets/stone_wall_feature.jpg" alt="Riparian stone wall structure along a waterway" class="aesthetic-round">
+                </div>
+            </section>
+            <section class="education-feature">
+                <div class="feature-text">
+                    <h3>Mapping & Monitoring Historic Dry-stone Walls</h3>
+                    <p>Join our efforts to preserve the cultural and ecological heritage of New England's dry-stone walls.</p>
+                    <a href="Contact.html" class="btn-secondary">Get Involved</a>
+                </div>
+                <div class="feature-image">
+                    <img src="assets/stone_wall_survey.jpg" alt="Volunteers surveying river stonework" class="makeover-thumb">
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 The Living Infrastructure Project</p>
+    </footer>
+
+</body>
+</html>
