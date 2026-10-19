@@ -126,49 +126,72 @@ nav a.active {
 
 /* Individual Profile Cards */
 .profile-card {
-    background: white;
+    background: #ffffff;
     padding: 25px;
     border-radius: 15px;
     width: 280px;
+    box-sizing: border-box;
+    flex: 0 1 280px;
     text-align: center;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
-    transition: transform 0.3s ease;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .profile-card:hover {
-    transform: translateY(-10px); /* Subtle hover lift */
+    transform: translateY(-8px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
 }
 
 /* Scaling the Profile Image */
 .profile-img {
     width: 150px;
     height: 150px;
-    border-radius: 50%; /* Perfect circle */
-    object-fit: cover;  /* Ensures faces aren't stretched */
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
     margin: 0 auto 15px;
-    border: 4px solid var(--sage);
+    border: 4px solid var(--sage, #94D2BD);
+}
+
+.profile-card h3 {
+    margin: 10px 0 5px;
+    font-size: 1.25rem;
+    color: #1a1a1a;
 }
 
 .role {
-    color: var(--deep-ocean);
+    color: var(--deep-ocean, #005F73);
     font-weight: 600;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
+    letter-spacing: 0.5px;
+    margin-bottom: 12px;
 }
 
 .bio {
-    font-size: 0.95rem;
+    font-size: 0.92rem;
     line-height: 1.5;
-    color: #555;
+    color: #555555;
+    margin-bottom: 15px;
+    flex-grow: 1; /* Aligns social links at the bottom across cards of varying bio length */
+}
+
+.social-links {
+    margin-top: auto;
 }
 
 .social-links a {
-    font-size: 0.8rem;
-    color: var(--amber);
+    font-size: 0.85rem;
+    color: var(--amber, #EE9B00);
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 600;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
 }
 
 /* Contact Grid */
