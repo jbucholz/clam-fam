@@ -91,9 +91,15 @@ h1 { font-family: 'Lora', serif; font-size: 3rem; }
     .content-grid { grid-template-columns: 1fr; }
 }
 
+/* Photos: clean rounded rectangle (replaces the old 'river stone' blob) */
 .aesthetic-round {
-    border-radius: 50% 50% 30% 70% / 50% 30% 70% 50%; /* Organic 'river stone' shape */
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    border-radius: 16px;
+    box-shadow: 0 12px 32px rgba(0, 95, 115, 0.12);
 }
 
 /* Pillars Section */
@@ -560,6 +566,7 @@ hr {
     list-style: none;
     display: flex;
     margin: 0;
+    padding: 0;
     height: 100%; /* Important for the hover bar height */
 }
 
@@ -584,7 +591,7 @@ hr {
 
 /* The Hover Effect */
 .nav-links a:hover {
-    background-color: #2a2a2a; /* Subtle lighten */
+    background-color: #004a5a; /* Slightly darker teal so hover stays on-palette */
     border-bottom: 4px solid var(--amber); /* Stantec uses a vibrant blue/green, we'll use your Amber */
     color: #ffffff;
 }
@@ -675,4 +682,165 @@ hr {
 }
 .square-smooth:hover {
     transform: scale(1.02); /* Slight pop when hovered */
+}
+
+
+/* ===========================================================
+   Site footer (shared)
+   =========================================================== */
+footer {
+    background: #003f4d;
+    color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 2rem 20px;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+}
+footer p { margin: 0; }
+
+/* ===========================================================
+   About page
+   =========================================================== */
+.about-page { line-height: 1.7; }
+.about-page h1,
+.about-page h2,
+.about-page h3 { font-family: 'Lora', serif; color: var(--deep-ocean); line-height: 1.25; }
+
+.eyebrow {
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--amber);
+    margin: 0 0 1rem;
+}
+
+.about-page .about-hero {
+    padding: 96px 0 80px;
+    background: #fff;
+    border-bottom: 1px solid rgba(148, 210, 189, 0.5);
+}
+.about-page .about-hero h1 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    max-width: 22ch;
+    margin: 0 auto 1.5rem;
+}
+.about-page .lead {
+    max-width: 62ch;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    line-height: 1.7;
+}
+.about-page .lead strong { font-style: normal; }
+
+.feature-row {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 5rem 0;
+}
+.feature-row + .feature-row { border-top: 1px solid rgba(148, 210, 189, 0.5); }
+.feature-row.reverse .feature-copy { order: 2; }
+.feature-row.reverse .feature-photo { order: 1; }
+
+.feature-copy { max-width: 60ch; }
+.feature-copy h2 { font-size: 2rem; margin: 0.25rem 0 1.25rem; }
+.feature-copy p { margin: 0 0 1rem; }
+
+.section-num {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    color: var(--amber);
+    padding-bottom: 0.4rem;
+    border-bottom: 2px solid var(--amber);
+}
+
+.feature-photo { margin: 0; max-width: 420px; justify-self: center; width: 100%; }
+.feature-photo figcaption {
+    margin-top: 0.6rem;
+    font-size: 0.75rem;
+    color: #5b6b7a;
+    text-align: right;
+}
+
+.about-page .pillars {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    max-width: 1100px;
+    margin: 0 auto 5rem;
+    padding-top: 0;
+    border-top: none;
+}
+.about-page .pillar {
+    background: #fff;
+    border-radius: 16px;
+    padding: 2rem;
+    border-top: 4px solid var(--sage);
+    box-shadow: 0 4px 20px rgba(0, 95, 115, 0.06);
+}
+.about-page .pillar h3 { margin: 0 0 0.6rem; font-size: 1.35rem; color: var(--deep-ocean); }
+.about-page .pillar p { margin: 0; font-size: 0.95rem; color: #3d4f63; }
+
+.community-band { background: var(--deep-ocean); color: #fff; }
+.community-inner {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    max-width: 1100px;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.community-band .eyebrow { color: var(--sage); }
+.community-band h2 { color: #fff; font-size: 2rem; margin: 0 0 1rem; }
+.community-band p { color: rgba(255, 255, 255, 0.85); max-width: 55ch; }
+.community-photo { margin: 0; justify-self: center; max-width: 340px; width: 100%; }
+.community-photo img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    border-radius: 16px;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.25);
+}
+
+.btn-light {
+    display: inline-block;
+    margin-top: 0.75rem;
+    padding: 0.8rem 1.6rem;
+    border-radius: 30px;
+    background: var(--amber);
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+.btn-light:hover { background: #ca8600; transform: translateY(-2px); }
+
+@media (max-width: 860px) {
+    .feature-row,
+    .community-inner { grid-template-columns: 1fr; gap: 2.5rem; padding-top: 3.5rem; padding-bottom: 3.5rem; }
+    .feature-row.reverse .feature-copy { order: 1; }
+    .feature-row.reverse .feature-photo { order: 2; }
+    .about-page .pillars { grid-template-columns: 1fr; }
+    .container { padding-left: 20px; padding-right: 20px; }
+}
+
+/* Header on small screens: logo on top, menu scrolls sideways instead of overflowing */
+@media (max-width: 860px) {
+    .nice-header { display: block; }
+    .nav-container { flex-direction: column; height: auto; padding: 10px 0 0; width: 100%; box-sizing: border-box; }
+    .nav-links { min-width: 0; box-sizing: border-box; }
+    .urban-flow-logo { height: 40px; }
+    .nav-links { width: 100%; height: 48px; overflow-x: auto; justify-content: flex-start; scrollbar-width: none; }
+    .nav-links::-webkit-scrollbar { display: none; }
+    .nav-links a { padding: 0 14px; font-size: 0.75rem; white-space: nowrap; }
+    .dropdown-content { position: fixed; top: auto; }
 }
