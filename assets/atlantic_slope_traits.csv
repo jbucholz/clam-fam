@@ -1,0 +1,56 @@
+species,commonName,genus,tribe,maxLength,meanLength,shellSculpture,hermaphrodite,mud,sand,claySilt,gravel,pebble,cobble,boulder,bedrock,macrophyte,largeRiver,smallRiver,creek,lacustrine,slowCurrent,moderateCurrent,fastCurrent,broodLongTerm,hostInfection,nHostSpecies,gRank,federalStatus,north,south,endemic
+Alasmidonta arcula,Altamaha Arcmussel,Alasmidonta,Anodontini,84.0,44.5,0,0,0,1,0,0,0,0,0,0,0,1,1,0,0,1,0,0,1,,3.0,G2,petitioned or candidate,0,1,1
+Alasmidonta marginata,Elktoe,Alasmidonta,Anodontini,91.12,66.4,0,1,0,1,1,1,0,1,0,0,0,1,0,1,0,0,1,1,1,,25.0,G4,not listed,1,0,0
+Alasmidonta robusta,Carolina Elktoe,Alasmidonta,Anodontini,65.65,53.0,1,0,1,1,1,1,0,1,1,1,0,0,0,1,0,0,0,1,1,,,GH,not listed,0,1,1
+Alasmidonta undulata,Triangle Floater,Alasmidonta,Anodontini,75.0,,1,1,1,1,0,1,0,0,0,0,0,1,1,0,0,1,1,1,1,,12.0,G4,not listed,1,1,0
+Alasmidonta varicosa,Brook Floater,Alasmidonta,Anodontini,70.0,54.3,1,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,1,0,1,,3.0,G3,not listed,1,1,1
+Anodontoides ferussacianus,Cylindrical Papershell,Anodontoides,Anodontini,85.0,45.4,0,1,0,1,1,1,0,0,0,0,0,0,1,1,0,1,0,0,1,broadcast,11.0,G5,not listed,1,0,0
+Atlanticoncha ochracea,Tidewater Mucket,Atlanticoncha,Lampsilini,76.0,,0,0,0,1,1,1,0,1,0,0,0,0,1,1,0,1,0,0,1,,,G3,not listed,1,1,1
+Cambarunio iris,Rainbow,Cambarunio,Lampsilini,75.0,43.4,0,1,0,1,0,1,0,1,1,0,1,1,1,1,1,1,1,1,1,mantle lure,16.0,G5,not listed,1,0,0
+Elliptio angustata,Carolina Lance,Elliptio,Pleurobemini,140.0,,0,0,0,1,0,1,0,0,1,0,0,0,1,0,0,0,0,1,0,,,G4,not listed,1,1,1
+Elliptio arctata,Delicate Spike,Elliptio,Pleurobemini,90.0,,0,0,0,0,1,0,0,1,1,0,1,1,0,1,0,0,1,0,0,,,G2,petitioned or candidate,0,1,0
+Elliptio cistellaeformis,Box Spike,Elliptio,Pleurobemini,,,0,0,1,1,0,1,0,0,0,0,1,1,1,0,0,1,0,0,0,,,G4,not listed,0,1,1
+Elliptio complanata,Eastern Elliptio,Elliptio,Pleurobemini,130.0,72.0,0,1,1,1,1,1,0,1,0,0,0,1,1,1,1,1,1,1,0,broadcast,13.0,G5,not listed,1,1,0
+Elliptio congaraea,Carolina Slabshell,Elliptio,Pleurobemini,101.0,,0,0,0,1,0,1,0,0,1,0,0,0,1,0,0,0,0,1,0,,,G3,not listed,0,1,1
+Elliptio dariensis,Georgia Elephantear,Elliptio,Pleurobemini,,,0,0,1,1,1,1,0,0,0,0,0,1,1,0,0,1,1,0,0,conglutinate,,G3,not listed,0,1,1
+Elliptio downiei,Satilla Elephantear,Elliptio,Pleurobemini,,,0,0,1,1,1,1,0,0,0,0,0,1,1,0,0,1,1,0,0,,,G3,not listed,0,1,0
+Elliptio fisheriana,Northern Lance,Elliptio,Pleurobemini,100.0,,0,0,1,1,1,1,0,0,0,0,0,1,1,0,0,1,1,0,0,,4.0,G4,not listed,1,0,1
+Elliptio folliculata,Pod Lance,Elliptio,Pleurobemini,84.0,,0,0,0,1,1,0,0,0,0,0,0,1,1,0,0,1,1,1,0,,,G2,not listed,0,1,1
+Elliptio fraterna,Brother Spike,Elliptio,Pleurobemini,80.0,64.0,1,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,,,G1,not listed,0,1,0
+Elliptio hopetonensis,Altamaha Slabshell,Elliptio,Pleurobemini,186.0,,0,0,1,1,0,0,0,0,0,0,0,1,1,0,0,1,1,1,0,,4.0,G4,not listed,0,1,1
+Elliptio icterina,Variable Spike,Elliptio,Pleurobemini,86.0,,0,0,0,1,1,1,0,1,1,0,0,1,1,0,0,1,1,0,0,,,G5,not listed,0,1,0
+Elliptio lanceolata,Yellow Lance,Elliptio,Pleurobemini,86.0,,0,0,1,1,0,1,0,1,0,0,0,1,1,1,0,1,1,1,0,,,G2,threatened,1,1,1
+Elliptio marsupiobesa,Cape Fear Spike,Elliptio,Pleurobemini,68.5,,0,0,1,1,1,1,0,0,0,0,0,0,0,1,0,1,0,0,0,,,G3,not listed,0,1,1
+Elliptio producta,Atlantic Spike,Elliptio,Pleurobemini,100.0,,0,0,,,,,0,,,,,,,,,,,,0,,,G3,not listed,1,1,1
+Elliptio roanokensis,Roanoke Slabshell,Elliptio,Pleurobemini,150.0,,0,0,0,1,0,1,0,0,1,0,0,0,1,0,0,0,0,1,0,,,G3,not listed,0,1,1
+Elliptio shepardiana,Altamaha Lance,Elliptio,Pleurobemini,,,0,0,0,1,0,1,0,0,0,0,0,1,1,1,0,1,1,0,0,,4.0,G4,not listed,0,1,1
+Elliptio spinosa,Altamaha Spinymussel,Elliptio,Pleurobemini,110.0,,1,0,0,1,0,1,0,0,0,0,0,0,1,0,0,0,1,0,0,conglutinate,,G1,endangered,0,1,1
+Fusconaia masoni,Atlantic Pigtoe,Fusconaia,Pleurobemini,74.0,,0,0,0,1,1,1,0,1,0,0,0,0,0,1,0,0,0,1,0,conglutinate,2.0,G1,threatened,0,1,1
+Lampsilis cardium,Plain Pocketbook,Lampsilis,Lampsilini,150.0,105.0,0,0,0,1,0,1,0,1,0,0,0,1,1,0,0,1,1,1,1,mantle lure,16.0,G5,not listed,1,0,0
+Lampsilis cariosa,Yellow Lampmussel,Lampsilis,Lampsilini,127.0,,0,0,0,1,1,1,0,0,0,0,0,1,1,1,1,1,1,1,1,mantle lure,,G3,not listed,1,1,1
+Lampsilis dolabraeformis,Altamaha Pocketbook,Lampsilis,Lampsilini,,,0,0,0,1,0,0,0,0,0,0,0,1,1,0,0,1,1,1,1,,3.0,G3,not listed,0,1,1
+Lampsilis radiata,Eastern Lampmussel,Lampsilis,Lampsilini,120.0,,0,0,0,1,0,1,0,0,1,0,0,1,1,0,1,1,1,0,1,mantle lure,,G5,not listed,1,1,0
+Lampsilis siliquoidea,Fatmucket,Lampsilis,Lampsilini,152.4,36.8,0,0,1,1,1,0,0,0,0,0,0,1,1,0,0,1,1,0,1,mantle lure,24.0,G5,not listed,1,0,0
+Lampsilis splendida,Rayed Pink Fatmucket,Lampsilis,Lampsilini,120.0,,0,0,0,1,0,0,0,0,0,0,0,1,1,0,0,1,1,1,1,mantle lure,1.0,G3,not listed,0,1,1
+Lasmigona costata,Flutedshell,Lasmigona,Anodontini,190.0,,1,0,0,1,0,1,0,0,0,0,0,1,0,1,1,1,1,0,1,broadcast,73.0,G5,not listed,1,0,0
+Margaritifera margaritifera,Eastern Pearlshell,Margaritifera,,162.0,71.5,0,1,0,1,0,1,0,1,1,0,0,0,1,1,0,1,1,0,,broadcast,5.0,G4,not listed,1,0,0
+Parvaspina collina,James Spinymussel,Parvaspina,Pleurobemini,70.9,,0,0,0,1,0,1,0,0,0,0,0,0,1,1,0,1,1,0,0,conglutinate,7.0,G1,endangered,0,1,1
+Parvaspina steinstansana,Tar River Spinymussel,Parvaspina,Pleurobemini,60.0,,0,0,0,1,0,1,0,1,1,0,0,1,1,0,0,0,0,1,0,,,G1,endangered,0,1,1
+Platynaias decorata,Carolina Heelsplitter,Platynaias,Anodontini,118.0,,0,0,1,1,1,1,0,0,0,0,0,0,1,1,0,1,0,0,1,conglutinate,13.0,G1,endangered,0,1,1
+Platynaias subviridis,Green Floater,Platynaias,Anodontini,63.0,,0,0,1,1,0,1,0,0,0,0,0,1,1,1,0,1,1,0,1,,,G3,petitioned or candidate,1,1,0
+Prolasmidonta heterodon,Dwarf Wedgemussel,Prolasmidonta,Anodontini,57.0,29.72,0,0,0,1,0,1,0,1,0,0,0,0,0,1,0,1,1,0,1,,3.0,G1,endangered,1,1,1
+Pyganodon cataracta,Eastern Floater,Pyganodon,Anodontini,170.0,,0,0,1,1,0,0,0,0,0,0,0,1,1,1,1,1,0,0,1,,3.0,G5,not listed,1,1,0
+Pyganodon gibbosa,Inflated Floater,Pyganodon,Anodontini,120.0,,0,0,0,1,0,0,0,0,0,0,0,1,1,0,0,1,0,0,1,,,G3,petitioned or candidate,0,1,1
+Pyganodon grandis,Giant Floater,Pyganodon,Anodontini,254.0,108.0,0,0,1,1,0,0,0,0,0,0,0,1,1,1,1,1,0,0,1,broadcast,32.0,G5,not listed,1,0,0
+Pyganodon lacustris,Lake Floater,Pyganodon,Anodontini,116.0,,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,,,GU,not listed,1,0,0
+Sagittunio nasutus,Eastern Pondmussel,Sagittunio,Lampsilini,122.5,70.0,0,0,0,1,0,1,0,0,1,0,0,1,1,0,1,1,1,1,1,mantle lure,7.0,G4,not listed,1,1,0
+Sagittunio vaughnianus,Carolina Creekshell,Sagittunio,Lampsilini,60.0,,0,0,1,1,1,1,0,0,0,0,0,0,1,1,0,1,1,0,1,mantle lure,,G2,not listed,0,1,1
+Strophitus undulatus,Creeper,Strophitus,Anodontini,148.9,,0,0,1,1,0,1,0,0,0,0,1,1,1,1,0,1,0,0,1,kinetic lure,44.0,G5,not listed,1,1,0
+Toxolasma pullus,Savannah Lilliput,Toxolasma,Lampsilini,35.0,31.4,0,0,1,1,1,0,0,0,0,0,0,0,0,1,0,1,0,0,1,mantle lure,,G2,not listed,0,1,1
+Uniomerus carolinianus,Eastern Pondhorn,Uniomerus,Quadrulini,125.0,,0,0,1,1,0,0,0,0,0,0,0,1,1,1,1,1,0,0,0,,,G4,not listed,0,1,0
+Utterbackia imbecillis,Paper Pondshell,Utterbackia,Anodontini,120.0,,0,1,1,1,0,1,0,0,0,0,0,1,1,1,0,1,0,0,1,broadcast,,G5,not listed,1,1,0
+Utterbackiana couperiana,Barrel Floater,Utterbackiana,Anodontini,100.0,,0,0,1,1,0,0,0,0,0,0,0,0,1,0,0,1,0,0,1,,,G4,not listed,0,1,0
+Utterbackiana implicata,Alewife Floater,Utterbackiana,Anodontini,178.0,,0,0,1,1,1,0,0,0,0,0,0,1,1,0,0,1,0,0,1,,4.0,G5,not listed,1,1,1
+Venustaconcha constricta,Notched Rainbow,Venustaconcha,Lampsilini,65.0,,0,0,0,1,1,1,0,1,1,1,0,0,1,1,0,0,1,1,1,mantle lure,12.0,G3,not listed,0,1,1
+Villosa delumbis,Eastern Creekshell,Villosa,Lampsilini,38.0,,0,0,1,1,0,0,0,0,0,0,1,0,1,1,1,1,1,0,1,mantle lure,1.0,G4,not listed,0,1,1
+Villosa vibex,Southern Rainbow,Villosa,Lampsilini,100.0,64.8,0,0,0,1,1,1,0,0,0,0,0,1,1,1,0,1,1,0,1,mantle lure,6.0,G5,not listed,0,1,0
