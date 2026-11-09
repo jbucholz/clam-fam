@@ -844,3 +844,87 @@ footer p { margin: 0; }
     .nav-links a { padding: 0 14px; font-size: 0.75rem; white-space: nowrap; }
     .dropdown-content { position: fixed; top: auto; }
 }
+
+/* ===========================================================
+   Trait explorer (traits.html)
+   =========================================================== */
+.traits-page { line-height: 1.6; }
+.traits-page h1, .traits-page h2, .traits-page h3 { font-family: 'Lora', serif; color: var(--deep-ocean); line-height: 1.25; }
+.traits-page .about-hero { padding: 80px 0 64px; background: #fff; border-bottom: 1px solid rgba(148, 210, 189, 0.5); text-align: center; }
+.traits-page .about-hero h1 { font-size: clamp(2rem, 4vw, 3rem); margin: 0 auto 1.25rem; }
+.traits-page .lead { max-width: 62ch; margin: 0 auto; font-size: 1.15rem; line-height: 1.7; }
+.traits-page .eyebrow { font-family: 'Inter', sans-serif; text-transform: uppercase; letter-spacing: 2px; font-size: 0.78rem; font-weight: 600; color: var(--amber); margin: 0 0 1rem; }
+.traits-page > .container { max-width: 1140px; padding-top: 2.5rem; padding-bottom: 4rem; }
+
+.trait-tabs { display: flex; gap: 2rem; border-bottom: 1px solid rgba(148, 210, 189, 0.7); margin-bottom: 2rem; overflow-x: auto; }
+.trait-tab { font: 700 0.85rem 'Inter', sans-serif; text-transform: uppercase; letter-spacing: 1.5px; color: var(--text-dark); opacity: 0.6; background: none; border: 0; border-bottom: 4px solid transparent; padding: 0.9rem 0; margin-bottom: -1px; cursor: pointer; white-space: nowrap; }
+.trait-tab:hover { opacity: 1; }
+.trait-tab[aria-selected="true"] { opacity: 1; color: var(--deep-ocean); border-bottom-color: var(--amber); }
+.trait-tab:focus-visible, .trait-chip:focus-visible, .trait-sort select:focus-visible { outline: 2px solid var(--amber); outline-offset: 2px; }
+
+.trait-panel { display: flex; flex-direction: column; gap: 1.75rem; }
+.trait-panel[hidden] { display: none; }
+.trait-summary { margin: 0; font-family: 'Lora', serif; font-size: 1.35rem; line-height: 1.5; color: var(--deep-ocean); max-width: 60ch; }
+.trait-summary b { color: var(--amber); font-weight: 700; }
+.trait-note { margin: -0.75rem 0 0; font-size: 0.85rem; color: #5b6b7a; max-width: 80ch; }
+
+.trait-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem; }
+.trait-chips { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.trait-chip { font: 600 0.85rem 'Inter', sans-serif; padding: 0.5rem 1.1rem; border-radius: 30px; border: 2px solid var(--sage); background: #fff; color: var(--deep-ocean); cursor: pointer; transition: all 0.2s ease; }
+.trait-chip:hover { border-color: var(--deep-ocean); }
+.trait-chip[aria-pressed="true"] { background: var(--deep-ocean); border-color: var(--deep-ocean); color: #fff; }
+.trait-sort { margin-left: auto; display: flex; align-items: center; gap: 0.5rem; font-size: 0.85rem; color: #5b6b7a; }
+.trait-sort select { font: inherit; color: var(--text-dark); padding: 0.45rem 0.75rem; border: 2px solid var(--sage); border-radius: 8px; background: #fff; }
+
+.trait-card { background: #fff; border-radius: 16px; padding: 1.75rem; box-shadow: 0 4px 20px rgba(0, 95, 115, 0.06); border-top: 4px solid var(--sage); min-width: 0; display: flex; flex-direction: column; gap: 0.9rem; }
+.trait-card h2 { margin: 0; font-size: 1.4rem; }
+.trait-sub { margin: -0.5rem 0 0; font-size: 0.85rem; color: #5b6b7a; }
+
+.trait-legend { display: flex; flex-wrap: wrap; gap: 0.4rem 1.25rem; font-size: 0.8rem; color: #5b6b7a; }
+.trait-legend span { display: inline-flex; align-items: center; gap: 6px; }
+.trait-key { display: inline-block; width: 10px; height: 10px; border-radius: 2px; flex: none; }
+.trait-key.dot { border-radius: 50%; }
+.trait-key.ring { width: 6px; height: 6px; border-radius: 50%; border: 1.5px solid #9fb3ad; }
+.trait-key.endemic { width: 7px; height: 7px; border-radius: 0; background: #5b6b7a; }
+
+.trait-scroll { overflow-x: auto; min-width: 0; }
+.trait-matrix { position: relative; width: max-content; }
+.trait-matrix svg { display: block; font-family: 'Inter', sans-serif; }
+.trait-tip { position: absolute; pointer-events: none; background: #fff; border: 1px solid var(--sage); border-radius: 10px; box-shadow: 0 8px 24px rgba(0, 95, 115, 0.15); padding: 0.6rem 0.8rem; font-size: 0.8rem; line-height: 1.5; max-width: 270px; z-index: 5; }
+.trait-tip strong { display: block; font-style: italic; color: var(--deep-ocean); }
+.trait-tip .m { color: #5b6b7a; }
+
+.trait-shares { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.5rem 2.5rem; }
+.trait-group h3 { margin: 0 0 0.5rem; font-family: 'Inter', sans-serif; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; color: var(--amber); }
+.trait-bars { display: flex; flex-direction: column; gap: 6px; }
+.trait-bar { display: grid; grid-template-columns: minmax(90px, 10em) 1fr 6.5em; align-items: center; gap: 10px; font-size: 0.85rem; }
+.trait-bar .lab { display: flex; align-items: center; gap: 6px; min-width: 0; }
+.trait-bar .track { height: 10px; background: #e3eee9; border-radius: 5px; overflow: hidden; }
+.trait-bar .fill { height: 100%; border-radius: 5px; }
+.trait-bar .val { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.trait-bar .val .m { color: #5b6b7a; }
+.trait-two { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem; }
+
+.trait-species { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 1.25rem; }
+.trait-sp { background: #fff; border-radius: 16px; padding: 1.4rem; box-shadow: 0 4px 20px rgba(0, 95, 115, 0.06); display: flex; flex-direction: column; gap: 0.6rem; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+.trait-sp:hover { transform: translateY(-4px); box-shadow: 0 10px 28px rgba(0, 95, 115, 0.12); }
+.trait-sp h3 { margin: 0; font-size: 1.2rem; }
+.trait-sp .sci { margin: -0.4rem 0 0; font-style: italic; color: #5b6b7a; font-size: 0.9rem; }
+.trait-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+.trait-tag { font-size: 0.72rem; font-weight: 600; padding: 2px 10px; border-radius: 30px; border: 1.5px solid currentColor; }
+.trait-tag.need { color: #c27c00; }
+.trait-tag.plain { color: #5b6b7a; }
+.trait-sp dl { margin: 0.25rem 0 0; display: grid; grid-template-columns: auto 1fr; gap: 4px 12px; font-size: 0.85rem; }
+.trait-sp dt { color: #5b6b7a; }
+.trait-sp dd { margin: 0; }
+
+.trait-cite { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid rgba(148, 210, 189, 0.7); }
+.trait-cite h2 { font-family: 'Inter', sans-serif; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; color: var(--amber); margin: 0 0 0.5rem; }
+.trait-cite p { margin: 0; font-size: 0.9rem; padding-left: 2em; text-indent: -2em; max-width: 95ch; }
+.trait-cite a { color: var(--deep-ocean); word-break: break-word; }
+
+@media (max-width: 860px) {
+    .trait-sort { margin-left: 0; }
+    .trait-card { padding: 1.25rem; }
+    .trait-summary { font-size: 1.15rem; }
+}

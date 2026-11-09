@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mussel Traits - Ecological Infrastructure</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="nice-header">
+        <nav class="nav-container">
+            <a href="index.html" class="logo-link" aria-label="Urban Flow Home">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 100" class="urban-flow-logo">
+                    <defs>
+                        <linearGradient id="riverGradient" x1="0%" y1="50%" x2="100%" y2="50%">
+                            <stop offset="0%" style="stop-color:#005F73;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#94D2BD;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                    <path d="M10,80 C60,40 140,120 290,60" 
+                          stroke="url(#riverGradient)" 
+                          stroke-width="8" 
+                          fill="none" 
+                          stroke-linecap="round" />
+                    <g transform="translate(40, 15) scale(0.6)">
+                        <path d="M50,10 C10,30 10,70 50,90 C60,95 70,95 80,90 C120,70 120,30 80,10 C70,5 60,5 50,10 Z" fill="#005F73" />
+                        <path d="M55,15 C20,35 20,65 55,85 C65,90 75,90 85,85 C115,65 115,35 85,15 C75,10 65,10 55,15 Z" fill="#94D2BD" />
+                        <path d="M60,25 C40,40 40,60 60,75" stroke="white" stroke-width="2" fill="none" opacity="0.5"/>
+                        <path d="M70,35 C55,45 55,55 70,65" stroke="white" stroke-width="2" fill="none" opacity="0.3"/>
+                    </g>
+                </svg>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="news.html">News</a></li>
+                <li class="dropdown">
+                    <a href="Species-index.html" class="dropbtn">Species <span class="arrow">▼</span></a>
+                    <div class="dropdown-content">
+                        <a href="./species/species-snas.html">Eastern Pondmussel</a>
+                    </div>
+                </li>
+                <li><a href="traits.html" class="active">Traits</a></li>
+                <li><a href="Team.html">Team</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="traits-page">
+        <section class="about-hero">
+            <div class="container">
+                <p class="eyebrow">Trait explorer</p>
+                <h1>Freshwater Mussel Traits</h1>
+                <p class="lead">What Atlantic slope mussels live in, how big they get, how their larvae find a fish host, and how secure each species is, drawn from the national freshwater mussel trait dataset.</p>
+            </div>
+        </section>
+
+        <div class="container">
+            <div class="trait-tabs" role="tablist" aria-label="Region">
+                <button type="button" role="tab" class="trait-tab" id="tab-atlantic" data-panel="atlantic" aria-selected="true" aria-controls="atlantic">Atlantic slope</button>
+                <button type="button" role="tab" class="trait-tab" id="tab-rhode-island" data-panel="rhode-island" aria-selected="false" aria-controls="rhode-island">Rhode Island</button>
+            </div>
+
+            <!-- Atlantic slope -->
+            <section class="trait-panel" id="atlantic" role="tabpanel" aria-labelledby="tab-atlantic">
+                <p class="trait-summary" id="atl-summary">Loading trait data…</p>
+                <p class="trait-note">Includes every species the dataset lists as present in the Northern Atlantic or Southern Atlantic province. An Atlantic-only endemic is not present, or questionable, in any other province. <i>Sagittunio aldermani</i> is left out because its only Atlantic record is marked questionable.</p>
+
+                <div class="trait-controls">
+                    <div class="trait-chips" role="group" aria-label="Which species to show">
+                        <button type="button" class="trait-chip" data-scope="all" aria-pressed="true">All Atlantic slope</button>
+                        <button type="button" class="trait-chip" data-scope="north" aria-pressed="false">Northern Atlantic</button>
+                        <button type="button" class="trait-chip" data-scope="south" aria-pressed="false">Southern Atlantic</button>
+                        <button type="button" class="trait-chip" data-scope="endemic" aria-pressed="false">Atlantic-only endemics</button>
+                    </div>
+                    <label class="trait-sort" for="trait-sort">Sort rows
+                        <select id="trait-sort">
+                            <option value="genus">By genus</option>
+                            <option value="length">By max shell length</option>
+                            <option value="rank">By conservation rank</option>
+                        </select>
+                    </label>
+                </div>
+
+                <div class="trait-card">
+                    <h2>Trait matrix</h2>
+                    <p class="trait-sub">One row per species. Hover or tap a row for details. Blank cells have no data.</p>
+                    <div class="trait-legend" data-legend="full"></div>
+                    <div class="trait-scroll"><div class="trait-matrix" id="atl-matrix"></div></div>
+                </div>
+
+                <div class="trait-card">
+                    <h2>How common each trait is</h2>
+                    <p class="trait-sub">Share of species in this view with the trait recorded, out of the species that have data for it.</p>
+                    <div class="trait-shares" id="atl-shares"></div>
+                </div>
+
+                <div class="trait-two">
+                    <div class="trait-card">
+                        <h2>How larvae reach their fish hosts</h2>
+                        <p class="trait-sub">Host infection strategy, out of all species in this view.</p>
+                        <div class="trait-bars" id="atl-host"></div>
+                    </div>
+                    <div class="trait-card">
+                        <h2>NatureServe global rank</h2>
+                        <p class="trait-sub">G1 is critically imperiled and G5 is secure. GH means possibly extinct; GU and GNR are unranked.</p>
+                        <div class="trait-bars" id="atl-rank"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Rhode Island -->
+            <section class="trait-panel" id="rhode-island" role="tabpanel" aria-labelledby="tab-rhode-island" hidden>
+                <p class="trait-summary" id="ri-summary">Loading trait data…</p>
+                <p class="trait-note">Species list from a statewide survey of 129 sites (Raithel and Hartenstine, 1980–2006) and RIDEM fisheries staff, as reported by ecoRI News in 2024. Ten species have been documented in the state historically.</p>
+                <div class="trait-species" id="ri-cards"></div>
+                <div class="trait-card">
+                    <h2>Trait matrix</h2>
+                    <p class="trait-sub">The same layout as the Atlantic slope matrix, narrowed to Rhode Island's species.</p>
+                    <div class="trait-legend" data-legend="ri"></div>
+                    <div class="trait-scroll"><div class="trait-matrix" id="ri-matrix"></div></div>
+                </div>
+            </section>
+
+            <aside class="trait-cite">
+                <h2>Data source</h2>
+                <p>Hopper, G. W., Bucholz, J. R., DuBose, T. P., Fogelman, K. J., Keogh, S. M., Kubala, M. E., … &amp; Atkinson, C. L. (2023). A trait dataset for freshwater mussels of the United States of America. <i>Scientific Data</i>, 10(1), 745. <a href="https://doi.org/10.1038/s41597-023-02635-9" target="_blank" rel="noopener">https://doi.org/10.1038/s41597-023-02635-9</a></p>
+            </aside>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 The Living Infrastructure Project</p>
+    </footer>
+
+    <script src="traits.js"></script>
+</body>
+</html>
